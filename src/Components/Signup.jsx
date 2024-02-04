@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4007/register", { name, email, password })
+      .post("https://tamilbackend.onrender.com/register", { name, email, password })
       .then((res) => {
         alert("Created");
         console.log(res);
