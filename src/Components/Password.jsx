@@ -11,7 +11,7 @@ const Password = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://tamilbackend.onrender.com/forgot-password", { email })
+      .post("https://tamilbackendnew.onrender.com/forgot-password", { email })
       .then((res) => {
         console.log(res);
         if (res.data === "Success") {
