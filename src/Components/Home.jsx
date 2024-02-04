@@ -6,7 +6,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4007/Create Query", {  })
+      .post("https://tamilbackend.onrender.com/Create Query", {  })
       .then((res) => {
         console.log(res.data.Message);
         if (res.data.Message === "Success") {
