@@ -12,7 +12,7 @@ const ResetPassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:4007/reset-password/${id}/${token}/${password}`)
+      .post(`https://tamilbackend.onrender.com/reset-password/${id}/${token}/${password}`)
       .then((res) => {
         console.log(res);
         if (res.data.status === "Success") {
